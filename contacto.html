@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto - RosaBelle Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">RosaBelle Studio</h1>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="index.html#productos" class="nav-link">Tienda</a>
+      <a href="contacto.html" class="nav-link active">Contacto</a>
+      <a href="#" id="open-cart-2" class="nav-link">Carrito (<span id="cart-count-2">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <div class="contact-card">
+      <div class="contact-left">
+        <h2>Contáctanos 💌</h2>
+        <p>¿Tienes dudas o quieres una asesoría? Déjanos tu mensaje y te responderemos pronto.</p>
+
+        <form id="contact-form">
+          <label for="name">Nombre completo</label>
+          <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+
+          <label for="email">Correo</label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Enviar mensaje</button>
+            <button type="reset" class="btn-outline">Limpiar</button>
+          </div>
+        </form>
+
+        <p id="contact-feedback" class="confirmation" role="status" aria-live="polite"></p>
+
+        <div class="contact-data">
+          <p>📍 Calle Rosas #23, CDMX</p>
+          <p>📞 +52 55 1234 5678</p>
+          <p>✉️ contacto@rosabellestudio.com</p>
+          <p>Redes: <a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">TikTok</a></p>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <img src="1.jpg" alt="Mesa de maquillaje con flores">
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    © 2025 RosaBelle Studio — Maquillaje que enamora
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

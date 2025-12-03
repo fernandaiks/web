@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RosaBelle Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">RosaBelle Studio</h1>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="index.html#productos" class="nav-link">Tienda</a>
+      <a href="contacto.html" class="nav-link">Contacto</a>
+      <a href="#" id="open-cart" class="nav-link">Carrito (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Maquillaje que resalta tu belleza</h2>
+        <p>Encuentra tus productos favoritos y luce espectacular con RosaBelle Studio.</p>
+        <div class="hero-ctas">
+          <button class="btn" onclick="location.href='index.html#productos'">Ir a la tienda</button>
+          <button class="btn-outline" onclick="location.href='contacto.html'">Contacto</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="logo.jpg" alt="Mesa de maquillaje" class="hero-img">
+      </div>
+    </section>
+
+    <section id="productos" class="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="galeria" id="galeria"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2025 RosaBelle Studio — Maquillaje que enamora
+  </footer>
+
+  <!-- Modal carrito -->
+  <div id="cart-modal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <h3>🛒 Tu carrito</h3>
+      <ul id="cart-list"></ul>
+      <div id="cart-total"></div>
+      <div style="margin-top:12px">
+        <button class="btn" id="checkout-btn">Finalizar compra</button>
+        <button class="btn-outline" id="close-cart">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
